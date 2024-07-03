@@ -20,3 +20,14 @@ July 2nd, 2024
 - I have setup two additional VMs containing windows 10 named Helpdesk & Staff. I set them up so i can practice with them.
 - While trying to connect the helpdesk vm to the dc vm, as an ad user, i encountered some issue because windows 10 home doesn't support changing
 the from workstation to domain. I had to solve this by reinstalling a new vm that had windows 10 pro.
+
+July 3rd, 2024
+- After struggling to connect my dc to other clients i have finally ben able to clear this milestone.
+- I found an article on medium written by paul ok, that really helped me solve the problem.
+- I first went into the network settings of the dc vm and created 2 network adapter. 1 was set up with nat so that it's the internet gateway,
+2 was set up with internal network to connect to clients. In the network settings of the client vm, i set the network adapter to internal network,
+as all it internet connectivity will come from the dc and it only really need a internal network(lan for vms).
+- After that, i went ahead to install a DHCP server and i also set up the nat on the DC.
+- After doing this, i turned on the client and i immediately got a notification that theres a computer connected to me, after i saw this, 
+i knew i was doing the right thing.
+- After this notification it was very easy to connect the client to the DC
