@@ -1,0 +1,22 @@
+June 29, 2024
+- I installed virtualbox, by downloading the .deb package and using apt to install the package
+- While trying to install virtualbox i encountered the error, had to use sudo apt -f install to fix the error.
+- Created a vboxuser, so any usb device conected to the host machine can be seen by the vm.
+- I set up the machine and tried to start it, but it did not start. It talked about a vboxdriver not being installed.
+
+June 30, 2024
+- It's currently 2:38am and i just solved the issue my virtualbox has been having. I was able to get a pointer to the issue at hand by reading
+the official docs of virtual box on page 59. 
+- I was able to solve the issue by updating my gcc version to 12, as the latest version of virtual box needs gcc-12 to integrate with the kernel
+meanwhile ubuntu22.04 comes with version 11.3
+- While trying to install window server 2019 on virtualbox, i encountered an issue with the installation. Windows was complaining that
+there are some missing drivers
+- I went back to where i got the iso file from, and the vendor gave me a server 2019 bootable cd.
+- To be able to work with this, i had to create an iso file from the bootable cd using ubuntu disk utilities.
+- I have successfully installed windows server 2019, it remains setting it up and following along with the other tutorials.
+
+July 2nd, 2024
+- I have successfully set up active directory on the DC.
+- I have setup two additional VMs containing windows 10 named Helpdesk & Staff. I set them up so i can practice with them.
+- While trying to connect the helpdesk vm to the dc vm, as an ad user, i encountered some issue because windows 10 home doesn't support changing
+the from workstation to domain. I had to solve this by reinstalling a new vm that had windows 10 pro.
