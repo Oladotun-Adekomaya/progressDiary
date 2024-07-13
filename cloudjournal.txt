@@ -1,0 +1,5 @@
+July 13, 2024
+Today, i decided to start the 100 hours aws project bootcamp.
+- I've setup gitpod which i usd my sister's linkedin because i'm too young for linkedin. 
+- I've also setup github, and i just downloaded vscode.
+- I've signed up for all the tools needed to complete this bootcamp.
