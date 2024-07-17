@@ -3,3 +3,9 @@ Today, i decided to start the 100 hours aws project bootcamp.
 - I've setup gitpod which i usd my sister's linkedin because i'm too young for linkedin. 
 - I've also setup github, and i just downloaded vscode.
 - I've signed up for all the tools needed to complete this bootcamp.
+
+July 17,2024
+- I watched a few lessons on aws billing, and i setup my iam users to have access to billing.
+- I created a budget in aws to alert me when spend is above $0 and i also created an alert to monitor spend and send EMAIL alerts using SNS.
+- Today i found out that there is an actual difference between IAM identity center and IAM. I've been using IAM identity center all this while.
+
